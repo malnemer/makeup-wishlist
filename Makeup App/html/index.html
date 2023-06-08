@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Your Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "product-wrapper">
+            <div class = "product-search">
+                <h2 class = "title"> Makeup Wishlist</h2>
+               
+                  <div class="wishlist">
+                    <div class="wishlist-icon">
+                      <i class="fas fa-heart"></i>
+                      <span class="wishlist-count">0</span>
+                    </div>
+                    
+                    <div class="image-brush">
+                        <img src="powder.gif" alt="gif">
+                        </div>
+
+                    <div class="wishlist-dropdown">
+                      <h2 class="title">Wishlist</h2>
+                      <ul id="wishlist-items"></ul>
+                      <button type="button" class="btn clear-wishlist-btn" id="clear-wishlist-btn">Clear</button>
+                      <button type="button" class="btn view-all-btn" id="view-all-btn">View All</button>
+                    </div>
+                  </div>
+
+  
+                <div class="product-search-box">
+                  <input type = "text" class = "search-control"
+                  placeholder="Enter a Product" id = "search-input">
+                  <button type = "submit" class = "search-btn btn" id= "search-btn">
+                      <i class = "fas fa-search"></i>
+                  </button>
+                </div>         
+               </div>
+               
+               <div class = "product-result">
+                   <h2 class = "title">Search Results:</h2>
+                   <div id= "products">       
+                   </div>
+               </div>
+
+               <div class = "product-details"> 
+                   <button type = "button" class = "btn product-close-btn"
+                   id = "product-close-btn">
+                   <i class = "fas fa-times"></i>
+                </button>
+
+                <a href="wishlist.html" id="view-all-btn">View Wishlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src = "script.js"></script>
+</body>
+</html>
